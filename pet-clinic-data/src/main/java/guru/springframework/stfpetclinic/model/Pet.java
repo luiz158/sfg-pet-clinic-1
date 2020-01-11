@@ -27,7 +27,23 @@ public class Pet extends BaseEntity {
     private Set<Visit> visits = new HashSet<>(); // so we start with a hashset
 
 
-    public PetType getPetType() {
+    public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Set<Visit> getVisits() {
+		return visits;
+	}
+
+	public void setVisits(Set<Visit> visits) {
+		this.visits = visits;
+	}
+
+	public PetType getPetType() {
         return petType;
     }
 
@@ -50,4 +66,8 @@ public class Pet extends BaseEntity {
     public void setBirthDatel(LocalDate birthDatel) {
         this.birthDatel = birthDatel;
     }
+
+	public boolean isNew() {
+		return this.getId()==null;
+	}
 }

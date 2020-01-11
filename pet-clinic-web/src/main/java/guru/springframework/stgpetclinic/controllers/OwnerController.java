@@ -52,7 +52,7 @@ public class OwnerController  {
         return "owners/findOwners";
     }
 
-    public String processFindFOrm(Owner owner, BindingResult, Model model)
+    public String processFindFOrm(Owner owner, BindingResult bind, Model model)
     {
         if(owner.getLastName() == null)
         {

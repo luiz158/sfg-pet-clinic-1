@@ -3,6 +3,14 @@ package guru.springframework.stgpetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import guru.springframework.sfgpetclinic.services.OwnerService;
+import guru.springframework.sfgpetclinic.services.SpecialitiesService;
+import guru.springframework.sfgpetclinic.services.VetService;
+import guru.springframework.sfgpetclinic.services.map.OwnerMapService.PetTypeService;
+import guru.springframework.stfpetclinic.model.Owner;
+import guru.springframework.stfpetclinic.model.Speciality;
+import guru.springframework.stfpetclinic.model.Vet;
+
 @Component // spring will load into context then run method
 public class DataLoader implements CommandLineRunner {
 

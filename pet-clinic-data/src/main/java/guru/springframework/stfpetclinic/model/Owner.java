@@ -51,7 +51,7 @@ public class Owner extends Person {
         this.pets = pets;
     }
 
-    public Pet getPet(String name{
+    public Pet getPet(String name) {
         return getPet(name, false);
     }
 

@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class VetController {
 
 
-    private final guru.springframework.sfgpetclinic.services.VetService.VetService vetService;
+    private final VetService vetService;
 
 
-    public VetController(VetService.VetService vetService) {
+    public VetController(VetService vetService) {
         this.vetService = vetService;
     }
 
